@@ -18,6 +18,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background: var(--highcharts-background-color);
   color: var(--highcharts-neutral-color-100);
+
 }
 
 .wrapper {
@@ -25,6 +26,7 @@ body {
   margin: 20px auto;
   display: flex;
   gap: 20px;
+
 }
 
 #container {
@@ -42,7 +44,7 @@ body {
 
 #formBox h3 {
   margin-top: 0;
-  color : #000
+  color: #000
 }
 
 #dataList {
@@ -64,6 +66,27 @@ button {
 
 button:hover {
   opacity: 0.85;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #container {
+    width: 100% !important;
+    height: 350px !important;
+  }
+
+  #formBox {
+    width: 100% !important;
+    margin-top: 15px;
+  }
+
+  textarea {
+    height: 150px !important;
+  }
 }
 </style>
 </head>
